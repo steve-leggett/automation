@@ -8,28 +8,28 @@
     "name": "Guild Education Homepage and Navigation",
     "commands": [{
       "id": "32e8cb88-812a-4b45-b97f-039065217024",
-      "comment": "",
+      "comment": "Open Homepage",
       "command": "open",
       "target": "https://www.guildeducation.com/",
       "targets": [],
       "value": ""
     }, {
       "id": "7d38c318-da01-43cc-9f3b-e30bf77d53c1",
-      "comment": "",
+      "comment": "Set a Standard Window Size for Browser",
       "command": "setWindowSize",
       "target": "1400x1600",
       "targets": [],
       "value": ""
     }, {
       "id": "ad836624-8572-4b7a-a4ab-22b9e2b5d0d2",
-      "comment": "",
+      "comment": "Verify Homepage Element css=h1",
       "command": "//verifyElementPresent",
       "target": "css=h1",
       "targets": [],
       "value": ""
     }, {
       "id": "f89dc1f5-8ee0-47b0-b3fe-4b68e5508248",
-      "comment": "",
+      "comment": "Click For Employers Menu Item",
       "command": "click",
       "target": "id=menu-item-652",
       "targets": [
@@ -42,18 +42,18 @@
       "value": ""
     }, {
       "id": "7466a5c4-243b-4221-b33f-e9092d7d3720",
-      "comment": "",
+      "comment": "Verify Element For Employers Sub-Menu",
       "command": "verifyElementPresent",
-      "target": "css=#menu-item-652 > a .down-arrow",
+      "target": "css=#menu-item-652 > .sub-menu",
       "targets": [
-        ["css=#menu-item-652 > a .down-arrow", "css:finder"],
-        ["xpath=//li[@id='menu-item-652']/a/span/i", "xpath:idRelative"],
-        ["xpath=//i", "xpath:position"]
+        ["css=#menu-item-652 > .sub-menu", "css:finder"],
+        ["xpath=//li[@id='menu-item-652']/ul", "xpath:idRelative"],
+        ["xpath=//li/ul", "xpath:position"]
       ],
       "value": ""
     }, {
       "id": "38bfb186-2516-499d-a6bd-bc68bc3e9bd8",
-      "comment": "",
+      "comment": "Click For Learning Providers Menu Item",
       "command": "click",
       "target": "css=#menu-item-1354 > a > span",
       "targets": [
@@ -64,8 +64,19 @@
       ],
       "value": ""
     }, {
+      "id": "2ffad3b9-a7a1-4109-bb71-c02d7f0da5ac",
+      "comment": "Verify Element For Learning Providers Sub-Menu",
+      "command": "verifyElementPresent",
+      "target": "css=#menu-item-1354 > .sub-menu",
+      "targets": [
+        ["css=#menu-item-1354 > .sub-menu", "css:finder"],
+        ["xpath=//li[@id='menu-item-1354']/ul", "xpath:idRelative"],
+        ["xpath=//li[2]/ul", "xpath:position"]
+      ],
+      "value": ""
+    }, {
       "id": "fdfa2da4-1c90-4828-9c5c-9f0d0b9c0a3e",
-      "comment": "",
+      "comment": "Click Resources Menu Item",
       "command": "click",
       "target": "css=#menu-item-2394 > a > span",
       "targets": [
@@ -76,8 +87,19 @@
       ],
       "value": ""
     }, {
+      "id": "648c80d8-556b-416a-b66b-1dd1ad047b76",
+      "comment": "Verify Element Resources Sub-Menu",
+      "command": "verifyElementPresent",
+      "target": "css=#menu-item-2394 > .sub-menu",
+      "targets": [
+        ["css=#menu-item-2394 > .sub-menu", "css:finder"],
+        ["xpath=//li[@id='menu-item-2394']/ul", "xpath:idRelative"],
+        ["xpath=//li[3]/ul", "xpath:position"]
+      ],
+      "value": ""
+    }, {
       "id": "5b9a5853-e691-4fbc-a85f-389d1ebb2f60",
-      "comment": "",
+      "comment": "Click About Us Menu Item",
       "command": "click",
       "target": "css=#menu-item-653 > a > span",
       "targets": [
@@ -88,83 +110,26 @@
       ],
       "value": ""
     }, {
-      "id": "122cde73-ea80-4d60-afbc-38374c73d0a6",
-      "comment": "",
-      "command": "click",
-      "target": "css=#menu-item-652 > a > span",
+      "id": "52118af4-146e-4ee1-a0e8-c739f7328951",
+      "comment": "About Us Verification",
+      "command": "verifyElementPresent",
+      "target": "css=#menu-item-653 > .sub-menu",
       "targets": [
-        ["css=#menu-item-652 > a > span", "css:finder"],
-        ["xpath=//li[@id='menu-item-652']/a/span", "xpath:idRelative"],
-        ["xpath=//a/span", "xpath:position"],
-        ["xpath=//span[contains(.,'For Employers')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "c57c0b01-fb98-4417-9c2c-4437c3f92664",
-      "comment": "",
-      "command": "click",
-      "target": "css=#menu-item-2485 span",
-      "targets": [
-        ["css=#menu-item-2485 span", "css:finder"],
-        ["xpath=//li[@id='menu-item-2485']/a/span", "xpath:idRelative"],
-        ["xpath=//li[4]/ul/li/a/span", "xpath:position"],
-        ["xpath=//span[contains(.,'Who We Are')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "d057266e-27e1-40a4-a18b-07df98fb3b42",
-      "comment": "",
-      "command": "click",
-      "target": "css=#menu-item-653 > a > span",
-      "targets": [
-        ["css=#menu-item-653 > a > span", "css:finder"],
-        ["xpath=//li[@id='menu-item-653']/a/span", "xpath:idRelative"],
-        ["xpath=//li[4]/a/span", "xpath:position"],
-        ["xpath=//span[contains(.,'About Us')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "becc8135-7371-4822-8940-65d7bacc4ee5",
-      "comment": "",
-      "command": "click",
-      "target": "css=#menu-item-2486 span",
-      "targets": [
-        ["css=#menu-item-2486 span", "css:finder"],
-        ["xpath=//li[@id='menu-item-2486']/a/span", "xpath:idRelative"],
-        ["xpath=//li[4]/ul/li[2]/a/span", "xpath:position"],
-        ["xpath=//span[contains(.,'Leadership')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "31088758-b98f-404a-8a8a-b184bc1e5a35",
-      "comment": "",
-      "command": "click",
-      "target": "id=menu-item-653",
-      "targets": [
-        ["id=menu-item-653", "id"],
-        ["css=#menu-item-653", "css:finder"],
-        ["xpath=//li[@id='menu-item-653']", "xpath:attributes"],
-        ["xpath=//ul[@id='menu-primary-nav']/li[4]", "xpath:idRelative"],
-        ["xpath=//li[4]", "xpath:position"]
+        ["css=#menu-item-653 > .sub-menu", "css:finder"],
+        ["xpath=//li[@id='menu-item-653']/ul", "xpath:idRelative"],
+        ["xpath=//li[4]/ul", "xpath:position"]
       ],
       "value": ""
     }, {
       "id": "282bbf47-5d22-4d31-860d-7912da3f67ff",
-      "comment": "",
+      "comment": "Click LinkText=FAQs from About Us Menu Item",
       "command": "click",
       "target": "linkText=FAQs",
-      "targets": [
-        ["linkText=FAQs", "linkText"],
-        ["css=#menu-item-3061 > a", "css:finder"],
-        ["xpath=//li[@id='menu-item-3061']/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, 'https://www.guildeducation.com/about-us/faqs/')]", "xpath:href"],
-        ["xpath=//li[4]/ul/li[3]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'FAQs')]", "xpath:innerText"]
-      ],
+      "targets": [],
       "value": ""
     }, {
       "id": "41993c13-aa38-4479-adb2-b7833432066a",
-      "comment": "",
+      "comment": "Click About Us from Menu",
       "command": "click",
       "target": "id=menu-item-653",
       "targets": [
@@ -176,33 +141,8 @@
       ],
       "value": ""
     }, {
-      "id": "0b254827-1833-4ab1-be12-6cd6c9f0c82f",
-      "comment": "",
-      "command": "click",
-      "target": "id=menu-item-2478",
-      "targets": [
-        ["id=menu-item-2478", "id"],
-        ["css=#menu-item-2478", "css:finder"],
-        ["xpath=//li[@id='menu-item-2478']", "xpath:attributes"],
-        ["xpath=//li[@id='menu-item-653']/ul/li[4]", "xpath:idRelative"],
-        ["xpath=//li[4]/ul/li[4]", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "e32d8900-6889-42d9-a001-b2e00082aa72",
-      "comment": "",
-      "command": "click",
-      "target": "css=#menu-item-2478 span",
-      "targets": [
-        ["css=#menu-item-2478 span", "css:finder"],
-        ["xpath=//li[@id='menu-item-2478']/a/span", "xpath:idRelative"],
-        ["xpath=//li[4]/ul/li[4]/a/span", "xpath:position"],
-        ["xpath=//span[contains(.,'Careers')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
       "id": "53f3a418-c631-4860-a6be-5c227f9c0e27",
-      "comment": "",
+      "comment": "Click Resoures Menu-Item",
       "command": "click",
       "target": "css=#menu-item-2394 > a > span",
       "targets": [
@@ -214,7 +154,7 @@
       "value": ""
     }, {
       "id": "33db29a3-40b0-4012-a34d-3b8603037b33",
-      "comment": "",
+      "comment": "Click BLOG Link",
       "command": "click",
       "target": "css=#menu-item-2395 span",
       "targets": [
@@ -225,23 +165,41 @@
       ],
       "value": ""
     }, {
-      "id": "2bed6ea6-ffd3-4cea-bc0e-af2ee19bb7ab",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Resources",
+      "id": "22da48c1-8544-4dc6-8f36-f25d2cfd1f08",
+      "comment": "Verify Element Top-Post CSS Window",
+      "command": "verifyElementPresent",
+      "target": "css=.hp-top-post",
       "targets": [
-        ["linkText=Resources", "linkText"],
-        ["xpath=//a[contains(text(),'Resources')]", "xpath:link"],
-        ["xpath=(//li[@id='atb_1']/a)[7]", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
-        ["xpath=//li[3]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Resources ')]", "xpath:innerText"]
+        ["css=.hp-top-post", "css:finder"],
+        ["xpath=//div[@id='wrapper']/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b488b2f4-6723-4ea8-8011-29de1179aadb",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "linkText=Resources",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6cd52d4b-2619-48aa-b9eb-aaf8983f133f",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "linkText=Resource Center",
+      "targets": [
+        ["linkText=Resource Center", "linkText"],
+        ["xpath=//a[contains(text(),'Resource Center')]", "xpath:link"],
+        ["xpath=(//li[@id='atb_1']/a)[9]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.guildeducation.com/resource-center/')]", "xpath:href"],
+        ["xpath=//li[3]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Resource Center')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
       "id": "000b6ed9-cb58-4ce7-915a-7656d7a029ea",
       "comment": "",
-      "command": "click",
+      "command": "clickAt",
       "target": "linkText=Resource Center",
       "targets": [
         ["linkText=Resource Center", "linkText"],
@@ -257,22 +215,17 @@
       "windowTimeout": 2000
     }, {
       "id": "60ba896f-1ef4-4a93-9b10-f11ad77a9dfd",
-      "comment": "",
+      "comment": "Handles Pop-up Window (ensure browser is enabled)",
       "command": "selectWindow",
       "target": "handle=${win3439}",
       "targets": [],
       "value": ""
     }, {
-      "id": "496c3bf4-055a-4218-a209-d183b620ae5d",
+      "id": "c9152657-0388-4b5a-a66d-34f2a976c296",
       "comment": "",
-      "command": "click",
-      "target": "css=#menu-item-2469 span",
-      "targets": [
-        ["css=#menu-item-2469 span", "css:finder"],
-        ["xpath=//li[@id='menu-item-2469']/a/span", "xpath:idRelative"],
-        ["xpath=//li[3]/ul/li[3]/a/span", "xpath:position"],
-        ["xpath=//span[contains(.,'News & Press')]", "xpath:innerText"]
-      ],
+      "command": "mouseMoveAt",
+      "target": "css=#menu-item-1354 > a > span",
+      "targets": [],
       "value": ""
     }, {
       "id": "d9f9e616-59c2-458b-8b47-38954e19b06c",
@@ -285,6 +238,13 @@
         ["xpath=//nav/ul/li[2]/a/span", "xpath:position"],
         ["xpath=//span[contains(.,'For Learning Providers')]", "xpath:innerText"]
       ],
+      "value": ""
+    }, {
+      "id": "79092dcf-9a0a-4718-b9f8-09ac9bae4cfc",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=#menu-item-652 > a > span",
+      "targets": [],
       "value": ""
     }, {
       "id": "14b3482e-cc07-4b37-85fc-ef95a584d38d",
@@ -312,291 +272,178 @@
       "value": ""
     }, {
       "id": "bd20405d-711f-4989-bc7e-c322698eafac",
-      "comment": "",
-      "command": "click",
+      "comment": "Click Solutions from For Employers Drop-down",
+      "command": "//click",
       "target": "css=#menu-item-2487 span",
-      "targets": [
-        ["css=#menu-item-2487 span", "css:finder"],
-        ["xpath=//li[@id='menu-item-2487']/a/span", "xpath:idRelative"],
-        ["xpath=//li/ul/li/a/span", "xpath:position"],
-        ["xpath=//span[contains(.,'Platform')]", "xpath:innerText"]
-      ],
+      "targets": [],
       "value": ""
     }, {
       "id": "1038ee99-ccb4-41d2-81e0-6fe87dbe5631",
       "comment": "",
-      "command": "click",
+      "command": "//click",
       "target": "linkText=Student Signup",
-      "targets": [
-        ["linkText=Student Signup", "linkText"],
-        ["css=.justify-center", "css:finder"],
-        ["xpath=//a[contains(text(),'Student Signup')]", "xpath:link"],
-        ["xpath=//a[contains(@href, 'https://redirect.guildeducation.com/signup')]", "xpath:href"],
-        ["xpath=//div[2]/div/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Student Signup')]", "xpath:innerText"]
-      ],
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "29f950e2-79f2-4aa2-a789-558c07d5fb2e",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
       "value": ""
     }, {
       "id": "ced239d8-fff4-4c2e-afe8-faa8a6d007b9",
       "comment": "",
-      "command": "click",
+      "command": "//click",
       "target": "css=.recess-react-select__control",
-      "targets": [
-        ["css=.recess-react-select__control", "css:finder"],
-        ["xpath=//main[@id='root']/div/section/form/div[3]/div/div[2]/div", "xpath:idRelative"],
-        ["xpath=//div[2]/div", "xpath:position"]
-      ],
+      "targets": [],
       "value": ""
     }, {
       "id": "5e34a95d-d7fd-4dbf-92ee-11ff20f74f61",
       "comment": "",
-      "command": "type",
+      "command": "//type",
       "target": "id=employer",
-      "targets": [
-        ["id=employer", "id"],
-        ["css=#employer", "css:finder"],
-        ["xpath=//input[@id='employer']", "xpath:attributes"],
-        ["xpath=//main[@id='root']/div/section/form/div[3]/div/div[2]/div/div/div/div/input", "xpath:idRelative"],
-        ["xpath=//input", "xpath:position"]
-      ],
+      "targets": [],
       "value": "Test Organization"
     }, {
       "id": "2ae8e001-74b7-4836-91ea-b44be1697b6b",
       "comment": "",
-      "command": "click",
+      "command": "//click",
       "target": "css=.btn--2q_66",
-      "targets": [
-        ["css=.btn--2q_66", "css:finder"],
-        ["xpath=//button[@type='submit']", "xpath:attributes"],
-        ["xpath=//main[@id='root']/div/section/form/div[4]/button", "xpath:idRelative"],
-        ["xpath=//button", "xpath:position"]
-      ],
+      "targets": [],
       "value": ""
     }, {
       "id": "714cd1fa-5893-4931-ab9d-c6ad044a97bf",
       "comment": "",
-      "command": "mouseOver",
+      "command": "//mouseOver",
       "target": "css=.btn--2q_66",
-      "targets": [
-        ["css=.btn--2q_66", "css:finder"],
-        ["xpath=//button[@type='submit']", "xpath:attributes"],
-        ["xpath=//main[@id='root']/div/section/form/div[4]/button", "xpath:idRelative"],
-        ["xpath=//button", "xpath:position"]
-      ],
+      "targets": [],
       "value": ""
     }, {
       "id": "e9a10261-cf74-4c8d-b2b5-e51ce8e4d218",
       "comment": "",
-      "command": "mouseOut",
+      "command": "//mouseOut",
       "target": "css=.btn--2q_66",
-      "targets": [
-        ["css=.btn--2q_66", "css:finder"],
-        ["xpath=//button[@type='submit']", "xpath:attributes"],
-        ["xpath=//main[@id='root']/div/section/form/div[4]/button", "xpath:idRelative"],
-        ["xpath=//button", "xpath:position"]
-      ],
+      "targets": [],
       "value": ""
     }, {
       "id": "dc5536bb-2d33-4a69-9214-7ee3f509ac54",
       "comment": "",
-      "command": "mouseDownAt",
+      "command": "//mouseDownAt",
       "target": "css=.errorText---7Z99 > span",
-      "targets": [
-        ["css=.errorText---7Z99 > span", "css:finder"],
-        ["xpath=//div[@id='employer-error']/div/ul/li/span/span", "xpath:idRelative"],
-        ["xpath=//span/span", "xpath:position"]
-      ],
+      "targets": [],
       "value": "150,10.79998779296875"
     }, {
       "id": "2c40be99-37ff-4064-85b9-3ab883750594",
       "comment": "",
-      "command": "mouseMoveAt",
+      "command": "//mouseMoveAt",
       "target": "css=.errorText---7Z99 > span",
-      "targets": [
-        ["css=.errorText---7Z99 > span", "css:finder"],
-        ["xpath=//div[@id='employer-error']/div/ul/li/span/span", "xpath:idRelative"],
-        ["xpath=//span/span", "xpath:position"]
-      ],
+      "targets": [],
       "value": "150,10.79998779296875"
     }, {
       "id": "e6abed94-3224-4726-8b15-05d6971eb485",
       "comment": "",
-      "command": "mouseUpAt",
+      "command": "//mouseUpAt",
       "target": "css=.errorText---7Z99 > span",
-      "targets": [
-        ["css=.errorText---7Z99 > span", "css:finder"],
-        ["xpath=//div[@id='employer-error']/div/ul/li/span/span", "xpath:idRelative"],
-        ["xpath=//span/span", "xpath:position"]
-      ],
+      "targets": [],
       "value": "150,10.79998779296875"
     }, {
       "id": "5dbd20bb-81a0-471d-ba6e-a0a5cb801b60",
       "comment": "",
-      "command": "click",
+      "command": "//click",
       "target": "css=.errorText---7Z99",
-      "targets": [
-        ["css=.errorText---7Z99", "css:finder"],
-        ["xpath=//div[@id='employer-error']/div/ul/li/span", "xpath:idRelative"],
-        ["xpath=//li/span", "xpath:position"],
-        ["xpath=//span[contains(.,'Employer name is required.')]", "xpath:innerText"]
-      ],
+      "targets": [],
       "value": ""
     }, {
       "id": "dc3fb902-ea62-44e4-aa2e-796165f88b9c",
       "comment": "",
-      "command": "click",
+      "command": "//click",
       "target": "css=.errorText---7Z99 > span",
-      "targets": [
-        ["css=.errorText---7Z99 > span", "css:finder"],
-        ["xpath=//div[@id='employer-error']/div/ul/li/span/span", "xpath:idRelative"],
-        ["xpath=//span/span", "xpath:position"]
-      ],
+      "targets": [],
       "value": ""
     }, {
       "id": "a10fb9a6-7da4-4b80-8737-b7e0374cb58f",
       "comment": "",
-      "command": "click",
+      "command": "//click",
       "target": "css=.errorText---7Z99 > span",
-      "targets": [
-        ["css=.errorText---7Z99 > span", "css:finder"],
-        ["xpath=//div[@id='employer-error']/div/ul/li/span/span", "xpath:idRelative"],
-        ["xpath=//span/span", "xpath:position"]
-      ],
+      "targets": [],
       "value": ""
     }, {
       "id": "5f020f2c-151f-496c-bcfe-bd7548a74aa5",
       "comment": "",
-      "command": "doubleClick",
+      "command": "//doubleClick",
       "target": "css=.errorText---7Z99 > span",
-      "targets": [
-        ["css=.errorText---7Z99 > span", "css:finder"],
-        ["xpath=//div[@id='employer-error']/div/ul/li/span/span", "xpath:idRelative"],
-        ["xpath=//span/span", "xpath:position"]
-      ],
+      "targets": [],
       "value": ""
     }, {
       "id": "a9e83ffc-536a-4457-8f8c-015b1be38a53",
       "comment": "",
-      "command": "click",
+      "command": "//click",
       "target": "css=.errorText---7Z99 > span",
-      "targets": [
-        ["css=.errorText---7Z99 > span", "css:finder"],
-        ["xpath=//div[@id='employer-error']/div/ul/li/span/span", "xpath:idRelative"],
-        ["xpath=//span/span", "xpath:position"]
-      ],
+      "targets": [],
       "value": ""
     }, {
       "id": "99c4a99e-12c4-4885-9b54-cd58fe69efdb",
       "comment": "",
-      "command": "click",
+      "command": "//click",
       "target": "css=.errorText---7Z99 > span",
-      "targets": [
-        ["css=.errorText---7Z99 > span", "css:finder"],
-        ["xpath=//div[@id='employer-error']/div/ul/li/span/span", "xpath:idRelative"],
-        ["xpath=//span/span", "xpath:position"]
-      ],
+      "targets": [],
       "value": ""
     }, {
       "id": "ed90cad2-b6aa-4185-be34-b96b1721d99b",
       "comment": "",
-      "command": "click",
+      "command": "//click",
       "target": "css=.recess-react-select__value-container",
-      "targets": [
-        ["css=.recess-react-select__value-container", "css:finder"],
-        ["xpath=//main[@id='root']/div/section/form/div[3]/div/div[2]/div/div", "xpath:idRelative"],
-        ["xpath=//div[2]/div/div", "xpath:position"]
-      ],
+      "targets": [],
       "value": ""
     }, {
       "id": "a51848d2-203b-47a3-b5c5-24467e11e799",
       "comment": "",
-      "command": "click",
+      "command": "//click",
       "target": "css=#react-select-2-option-2 > span",
-      "targets": [
-        ["css=#react-select-2-option-2 > span", "css:finder"],
-        ["xpath=//div[@id='react-select-2-option-2']/span", "xpath:idRelative"],
-        ["xpath=//div[3]/span", "xpath:position"]
-      ],
+      "targets": [],
       "value": ""
     }, {
       "id": "6f0dd9d1-d10c-4f9b-97f8-7e8d2b0d6ab6",
       "comment": "",
-      "command": "click",
+      "command": "//click",
       "target": "css=.btn--2q_66",
-      "targets": [
-        ["css=.btn--2q_66", "css:finder"],
-        ["xpath=//button[@type='submit']", "xpath:attributes"],
-        ["xpath=//main[@id='root']/div/section/form/div[4]/button", "xpath:idRelative"],
-        ["xpath=//button", "xpath:position"]
-      ],
+      "targets": [],
       "value": ""
     }, {
       "id": "33a58d4c-674b-4436-90ce-e8b042d79ca4",
       "comment": "",
-      "command": "click",
+      "command": "//click",
       "target": "css=.recess-react-select__control",
-      "targets": [
-        ["css=.recess-react-select__control", "css:finder"],
-        ["xpath=//main[@id='root']/div/section/form/div[3]/div/div[2]/div", "xpath:idRelative"],
-        ["xpath=//div[2]/div", "xpath:position"]
-      ],
+      "targets": [],
       "value": ""
     }, {
       "id": "0ba4cf61-0e9a-467a-b347-52ed41cea7bc",
       "comment": "",
-      "command": "mouseUp",
+      "command": "//mouseUp",
       "target": "css=.MuiSvgIcon-root",
-      "targets": [
-        ["css=.MuiSvgIcon-root", "css:finder"]
-      ],
+      "targets": [],
       "value": ""
     }, {
       "id": "465a83c0-bd4f-4c36-965d-ac9a49343a03",
       "comment": "",
-      "command": "mouseOver",
+      "command": "//mouseOver",
       "target": "id=studentLogin",
-      "targets": [
-        ["id=studentLogin", "id"],
-        ["linkText=Student Login", "linkText"],
-        ["css=#studentLogin", "css:finder"],
-        ["xpath=//a[contains(text(),'Student Login')]", "xpath:link"],
-        ["xpath=//a[@id='studentLogin']", "xpath:attributes"],
-        ["xpath=//a[contains(@href, 'https://redirect.guildeducation.com/login')]", "xpath:href"],
-        ["xpath=//div/div[2]/div/div/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Student Login')]", "xpath:innerText"]
-      ],
+      "targets": [],
       "value": ""
     }, {
       "id": "3b5a26e3-18c5-4b00-ab73-39e5c3969701",
       "comment": "",
-      "command": "mouseOut",
+      "command": "//mouseOut",
       "target": "id=studentLogin",
-      "targets": [
-        ["id=studentLogin", "id"],
-        ["linkText=Student Login", "linkText"],
-        ["css=#studentLogin", "css:finder"],
-        ["xpath=//a[contains(text(),'Student Login')]", "xpath:link"],
-        ["xpath=//a[@id='studentLogin']", "xpath:attributes"],
-        ["xpath=//a[contains(@href, 'https://redirect.guildeducation.com/login')]", "xpath:href"],
-        ["xpath=//div/div[2]/div/div/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Student Login')]", "xpath:innerText"]
-      ],
+      "targets": [],
       "value": ""
     }, {
       "id": "3f6bfaf7-a150-4f12-8f5f-d07d74a7d64c",
       "comment": "",
-      "command": "click",
+      "command": "//click",
       "target": "id=studentLogin",
-      "targets": [
-        ["id=studentLogin", "id"],
-        ["linkText=Student Login", "linkText"],
-        ["css=#studentLogin", "css:finder"],
-        ["xpath=//a[contains(text(),'Student Login')]", "xpath:link"],
-        ["xpath=//a[@id='studentLogin']", "xpath:attributes"],
-        ["xpath=//a[contains(@href, 'https://redirect.guildeducation.com/login')]", "xpath:href"],
-        ["xpath=//div/div[2]/div/div/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Student Login')]", "xpath:innerText"]
-      ],
+      "targets": [],
       "value": ""
     }]
   }],
